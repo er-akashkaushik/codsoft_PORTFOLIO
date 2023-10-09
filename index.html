@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/10dd969d80.js" crossorigin="anonymous"></script>
+    
+    
+    <title>Akash Kaushik - Web developer,Programmer</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div id="header">
+        <div class="container" >
+            <nav>
+                <img class="logo" src="logo.PNG" >
+                <ul id="sidemenu">
+                    <li><a style="--i:1;" href="#header">Home</a></li>
+                    <li><a style="--i:2;" href="#about">About</a></li>
+                    <li><a style="--i:3;" href="#project">Projects</a></li>
+                    <li><a style="--i:4;" href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Frontend Developer</p>
+                <h1>Hey,I'm <span>Akash</span><br>From India</h1> -->
+                <p class="p-1">Hello, I'm</p>
+                <h1>Akash</h1>
+                <p class="p-2 designation">And i'm a <span  id="multi-text"></span> </p>
+            </div>
+            <div class="user-image">
+                <img src="mee.jpg" alt="">
+            </div>
+        </div>       
+    </div>
+
+<!-- -------------------About---------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="mee.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1><span class="sub-title">About Me</span></h1>
+                <p>Hey Everyone I'm Akash form India. I'm a open source enthusiast.Currently I'm learning Javascipt.I'm a self taught developer and I love to learn new things on the go.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages: </span><br> C, C++, Java, JavaScript</li>
+                        <li><span>Frontend: </span><br> HTML, CSS, Tailwind</li>
+                        <li><span>Deployment/Tools: </span><br> Github, Git, VsCode</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>2018-2019:</span><br>10th from Raja Ram Mohan Roy Public School</li>
+                        <li><span>2019-2022:</span><br>Diploma in Mechanical Engineering<br>PUSA Institute of Technology</li>
+                        <li><span>2022-Pursuing:</span><br>Bachelor in Technology in Computer Science and Engineering<br>Maharaja Agrasen Institute of Technology</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><Span>1st-31st July/2021</Span><br>Intern at Motherson Sumi Systems Ltd.<br> </li>
+                        <li><Span>1st-4th March/2022</Span><br>Intern at Ring Road Honda <br> </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!-- --------------------Project-------------------- -->
+<div id="project">
+    <div class="container">
+        <h1><span class="sub-title">My Projects</span></h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Calculator</h2>
+                <p><span>HTML, CSS, JAVASCRIPT</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolorum fugit aut quisquam veniam facere tempore accusantium consequuntur tempora illum illo qui repellat, non error, voluptates voluptate quis aspernatur. Explicabo!</p>
+                <a href="https://er-akashkaushik.github.io/codsoft_CALCULATOR/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>To-Do List</h2>
+                <p><span>HTML, CSS, JAVASCRIPT</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dolorum fugit aut quisquam veniam facere tempore accusantium consequuntur tempora illum illo qui repellat, non error, voluptates voluptate quis aspernatur. Explicabo!</p>
+                <a href="https://er-akashkaushik.github.io/codsoft_TO_DO_LIST/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-spell-check"></i>
+                <h2>Text-Utiles</h2>
+                <p><span>HTML,Bootstrap,ReactJs</span><br>It is a text Utile in you can modify your text with different features like change font,convert to uppercase etc.</p>
+                <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------Contact----------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> akashkaushik.er@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9268341391</p>
+                <div class="social-icons">
+                    <a href="https://github.com/er-akashkaushik" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/akash-kaushik-9586a4258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" target="_blank"></i></a>
+                    <a href="https://www.instagram.com/skykaushik/"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+                </div>
+                <a href="Akash Resume final.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" id="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                    <div id="msg"></div>
+                    <button type="submit" class="btn">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="index.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script>
+    let typed = new Typed('#multi-text',{
+        strings: ["Frontend Developer","Programmer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    });
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIOsMOsUirDX1nQGRz9_9S-VtUoTlemzyjmY3kVFHr2ulZTpgPR9trKPHFIUm1pzE2/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg');
+    
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+            msg.innerText = "Message Sent !!!",
+            msg.style.display='block',
+            setTimeout(function(){
+                msg.innerText = "",
+                msg.style.display='none'
+                
+            },8000),
+            form.reset()
+        )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
